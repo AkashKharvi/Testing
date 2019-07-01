@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Retry Failed Test Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Analyser.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Retry  test(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.Addcontracttest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="fieldnametest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.Addcontracttest -->
+    </classes>
+  </test> <!-- Retry  test(failed) -->
+</suite> <!-- Failed suite [Retry Failed Test Automation Suite] -->
